@@ -71,9 +71,10 @@
         modified:   config/urls.py
         modified:   readme.md
 
+### 7. Individual movie pages: Creating the MovieDetail view
 
-
-
+        modified:   app/core/views.py
+        modified:   readme.md
 
 
 
