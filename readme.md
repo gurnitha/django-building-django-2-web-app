@@ -76,10 +76,12 @@
         modified:   app/core/views.py
         modified:   readme.md
 
+### 8. Individual movie pages: Creating the movie_detail.html template
 
-
-
-
+        modified:   readme.md
+        new file:   templates/base.html
+        new file:   templates/core/movie_detail.html
+        modified:   templates/core/movie_list.html
 
 
 
