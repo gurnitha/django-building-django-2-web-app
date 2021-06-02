@@ -94,9 +94,10 @@
         modified:   templates/core/movie_detail.html
         modified:   templates/core/movie_list.html
 
+### 11. Setting the order
 
-
-
+        modified:   app/core/models.py
+        modified:   readme.md
 
 
 
