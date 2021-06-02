@@ -115,6 +115,12 @@
         modified:   app/core/models.py
         modified:   readme.md
 
+### 15. Adding a model with relationships
+
+        modified:   app/core/admin.py
+        new file:   app/core/migrations/0002_auto_20210602_1728.py
+        modified:   app/core/models.py
+        modified:   readme.md
 
 
 

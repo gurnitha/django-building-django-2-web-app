@@ -29,7 +29,6 @@ class Person(models.Model):
 				self.first_name,
 				self.born)
 
-
 # Movie model
 class Movie(models.Model):
 	NOT_RATED = 0
@@ -50,21 +49,21 @@ class Movie(models.Model):
 				choices=RATINGS,default=NOT_RATED)
 	runtime = models.PositiveIntegerField()
 	website = models.URLField(blank=True)
-	# director = models.ForeignKey(
-	# 			to='Person',
-	# 			null=True,
-	# 			on_delete=models.SET_NULL,
-	# 			related_name='directed',
-	# 			blank=True)
-	# writers = models.ManyToManyField(
-	# 			to='Person',
-	# 			related_name='writing_credits',
-	# 			blank=True)
-	# actors = models.ManyToManyField(
-	# 			to='Person',
-	# 			through='Role',
-	# 			related_name='acting_credits',
-	# 			blank=True)
+	director = models.ForeignKey(
+				to='Person',
+				on_delete=models.SET_NULL,
+				related_name='directed',
+				null=True,
+				blank=True)
+	writers = models.ManyToManyField(
+				to='Person',
+				related_name='writing_credits',
+				blank=True)
+	actors = models.ManyToManyField(
+				to='Person',
+				through='Role',
+				related_name='acting_credits',
+				blank=True)
 
 	class Meta:
 		ordering = ('-year', 'title')
@@ -72,3 +71,23 @@ class Movie(models.Model):
 	def __str__(self):
 		return '{} ({})'.format(
 			self.title, self.year)
+
+
+# Role model
+class Role(models.Model):
+	movie  = models.ForeignKey(
+				Movie, 
+				on_delete=models.DO_NOTHING)
+	person = models.ForeignKey(
+				Person, 
+				on_delete=models.DO_NOTHING)
+	name   = models.CharField(max_length=140)
+
+	def __str__(self):
+		return "{} {} {}".format(self.movie_id, self.person_id, self.name)
+
+	class Meta:
+		unique_together = (
+			'movie',
+			'person',
+			'name')
