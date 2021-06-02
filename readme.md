@@ -65,6 +65,11 @@
         modified:   readme.md
         new file:   templates/core/movie_list.html
 
+### 6. Routing requests to our view with URLConf
+
+        new file:   app/core/urls.py
+        modified:   config/urls.py
+        modified:   readme.md
 
 
 
