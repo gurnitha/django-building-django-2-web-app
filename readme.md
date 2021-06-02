@@ -110,9 +110,10 @@
         modified:   config/settings.py
         new file:   templates/404.html
 
+### 14. Creating Person model
 
-
-
+        modified:   app/core/models.py
+        modified:   readme.md
 
 
 
