@@ -88,7 +88,11 @@
         modified:   app/core/urls.py
         modified:   readme.md
 
+### 10. Updating MovieList.html to extend base.html
 
+        modified:   readme.md
+        modified:   templates/core/movie_detail.html
+        modified:   templates/core/movie_list.html
 
 
 
