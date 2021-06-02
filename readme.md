@@ -104,10 +104,11 @@
         modified:   app/core/views.py
         modified:   readme.md
         modified:   templates/core/movie_list.html
-       
 
+### 13. 404 d for when things go missing
 
-
+        modified:   config/settings.py
+        new file:   templates/404.html
 
 
 
