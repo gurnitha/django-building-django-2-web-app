@@ -59,7 +59,11 @@
         modified:   app/core/views.py
         modified:   readme.md
 
+### 5. Adding our first template d movie_list.html
 
+        modified:   config/settings.py
+        modified:   readme.md
+        new file:   templates/core/movie_list.html
 
 
 
