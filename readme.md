@@ -16,7 +16,7 @@
 	Folder PATH listing                  
 	Volume serial number is 00000159 D810
 	E:.                                  
-	│   .gitignore                       
+	│   .gitignore      i                 
 	│   manage.py                        
 	│   readme.md                        
 	│                                    
@@ -42,4 +42,14 @@
 	            settings.cpython-39.pyc  
 	            urls.cpython-39.pyc      
 	            wsgi.cpython-39.pyc      
-	            __init__.cpython-39.pyc          
+	            __init__.cpython-39.pyc         
+
+
+### 3. Created amd registered Movie model 
+
+        modified:   app/core/admin.py
+        modified:   app/core/apps.py
+        new file:   app/core/migrations/0001_initial.py
+        modified:   app/core/models.py
+        modified:   config/settings.py
+        modified:   readme.md
