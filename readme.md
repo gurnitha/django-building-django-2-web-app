@@ -99,8 +99,12 @@
         modified:   app/core/models.py
         modified:   readme.md
 
+### 12. Adding pagination
 
-
+        modified:   app/core/views.py
+        modified:   readme.md
+        modified:   templates/core/movie_list.html
+       
 
 
 
