@@ -83,8 +83,10 @@
         new file:   templates/core/movie_detail.html
         modified:   templates/core/movie_list.html
 
+### 9. Individual movie pages: Adding MovieDetail to core.urls.py
 
-
+        modified:   app/core/urls.py
+        modified:   readme.md
 
 
 
